@@ -2,7 +2,7 @@ defmodule ImageProc do
   @resized_long_edge_map_square %{"sm" => 334, "md" => 668, "lg" => 1334}
   @resized_long_edge_map %{"sm" => 500, "md" => 1000, "lg" => 2000}
 
-  @output_image_filetypes = ["jpeg", "webp"]
+  @output_image_filetypes ["jpeg", "webp"]
 
   def generate_resized_images(
         image,
@@ -61,7 +61,7 @@ defmodule ImageProc do
     lst_paths_image = ImageIO.get_image_paths(path_input_folder)
 
     if not File.exists?(path_output_folder) do
-      File.mkdir(path_output_folder)
+      File.mkdir_p(path_output_folder)
     end
 
     for path_image <- lst_paths_image, image_filetype <- @output_image_filetypes do
