@@ -25,7 +25,7 @@ The aspect ratio of the input image is maintained in the resized versions.
 ### Prerequisites
 
 - Elixir 1.12 or higher
-- Image 0.25.1 or higher (Found here)
+- Image 0.25.1 or higher ([Found here](https://hex.pm/packages/image) )
 
 ### Installation
 
